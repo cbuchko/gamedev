@@ -27,6 +27,9 @@ public class UpdateResourcePanel : MonoBehaviour
                 case "Log":
                     updateLogCount(resource.Value);
                     break;
+                case "Food":
+                    updateFoodCount(resource.Value);
+                    break;
                 default:
                     break;
             }
@@ -37,5 +40,10 @@ public class UpdateResourcePanel : MonoBehaviour
         instruction = GameObject.Find("LogCount").GetComponent<Text>();
         instruction.text = LogCount.ToString();
 
+    }
+
+    public void updateFoodCount(int FoodCount){
+        instruction = GameObject.Find("FoodCount").GetComponent<Text>();
+        instruction.text = FoodCount.ToString();
     }
 }
