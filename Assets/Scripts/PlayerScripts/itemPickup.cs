@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class itemPickup : MonoBehaviour
 {
@@ -13,12 +14,6 @@ public class itemPickup : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D other){
 
         if (other.CompareTag("Player")){
@@ -26,6 +21,11 @@ public class itemPickup : MonoBehaviour
             {
                 if (inventory.isFull[i] == false){
                     inventory.isFull[i] = true;
+
+                    Color tempColor = inventory.slots[i].GetComponent<Image>().color;
+                    tempColor.a = 1;
+                    inventory.slots[i].GetComponent<Image>().color = tempColor;
+
                     Instantiate(itemButton, inventory.slots[i].transform, false);
                     Destroy(gameObject);
                     break;

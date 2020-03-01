@@ -333,6 +333,7 @@ GameObject:
   - component: {fileID: 198267167}
   - component: {fileID: 198267168}
   - component: {fileID: 198267169}
+  - component: {fileID: 198267170}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -502,6 +503,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DayCount: 1
+--- !u!114 &198267170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198267160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434ecad45d1103b4ea2fc8c2a664db18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerResources: {fileID: 0}
+  resourcePanel: {fileID: 1212813796}
 --- !u!4 &246977223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7998297097415791696, guid: bf9408ff821647a479f37c99d06bc4ba,
@@ -2721,7 +2736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3297,7 +3312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1212813797
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3334,7 +3349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3369,6 +3384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerResources: {fileID: 0}
+  resourcePanel: {fileID: 0}
 --- !u!1 &1251256689
 GameObject:
   m_ObjectHideFlags: 0
