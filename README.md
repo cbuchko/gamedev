@@ -2,9 +2,6 @@
 
 TODO:
 
-
-
-Improve UI
 Make collecting resources satisfying by having the items drop.
 
 NPC Stuff after
@@ -23,3 +20,4 @@ Food icon for resource panel
 Make grass tileset.
 Make resource panel and inventory slot only appear after you fill it
 FIX BUG WITH WOOD NOT BEING SPENT ON BUILDING CAMPFIRE
+Improve UI
