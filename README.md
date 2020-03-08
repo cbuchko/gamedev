@@ -2,6 +2,9 @@
 
 TODO:
 
+MAKE IT SO THE LOGS GO TO THE IMAGE LOCATION NOT A HARDCODED LOCATION
+MAKE IT SO THAT THE LOGS APPEAR ABOVE THE UI
+
 Make collecting resources satisfying by having the items drop.
 
 NPC Stuff after

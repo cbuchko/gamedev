@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RenderInteractable : MonoBehaviour
+public class SpawnPointRender : MonoBehaviour
 {
     public int MinDay;
     public int currentDay;

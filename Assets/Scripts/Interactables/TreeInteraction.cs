@@ -6,6 +6,9 @@ public class TreeInteraction : MonoBehaviour
 {
     private PlayerResources resources;
     private PlayerAction action;
+    public Transform spawnPoint;
+    public GameObject objectToRender;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +38,13 @@ public class TreeInteraction : MonoBehaviour
           
     }
 
-    /** Main way to interact with a tree */
+    /** Main way to interact with a tree. Drops a log on the ground */
     public void AxeInteraction()
     {
-        gameObject.SetActive(false); 
-        resources.resources["Log"] += 1;
+        Instantiate(objectToRender, spawnPoint.position, spawnPoint.rotation);
+        // resources.resources["Log"] += 1;
         action.currentObject = null;
+        gameObject.SetActive(false); 
     }
 
     public void FistInteraction()
