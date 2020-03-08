@@ -25,7 +25,6 @@ public class PlayerAction : MonoBehaviour{
 
     /* Might need to be changed so that every item
     has its own script for their actions but idk yet */
-
     public void PerformItemAction()
     {
         if(currentObject){

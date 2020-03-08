@@ -9,11 +9,18 @@ public class UpdateResourcePanel : MonoBehaviour
     public GameObject resourcePanel;
     public GameObject foodText;
     public GameObject foodImage;
+    public GameObject logImage;
+    public GameObject log;
     Text instruction;
-    // Start is called before the first frame update
+
+
+    /** Set the destination positions for pickup resources at the start,
+        before the panel gets disabled */
     void Start()
     {
-        playerResources = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerResources>();
+        playerResources = gameObject.GetComponent<PlayerResources>();
+        log.GetComponent<LerpHelper>().destinationPosition = logImage.transform.position;
+        resourcePanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,6 +29,7 @@ public class UpdateResourcePanel : MonoBehaviour
         updateResourceCount();
     }
 
+    /** update each resource, checking to see what the type is */
     public void updateResourceCount(){
 
         foreach(var resource in playerResources.resources){

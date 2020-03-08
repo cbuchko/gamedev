@@ -14,6 +14,8 @@ public class itemPickup : MonoBehaviour
         
     }
 
+    /** When colliding with an item (currently just an axe), put it in an available slot,
+        render the inventory slot and create the object inside the slot. */
     void OnTriggerEnter2D(Collider2D other){
 
         if (other.CompareTag("Player")){
