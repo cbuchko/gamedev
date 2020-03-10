@@ -6,11 +6,13 @@ Fix bug that happens when spamming yes button
 
 Improve sprites for tree and berry bush
 
-Make player sprite and animate
+
 
 Remove all instances of GameObject.Find()
 
 NPC Stuff after
+
+Make an axe swing animation
 
 COMPLETE:
 
@@ -25,3 +27,5 @@ Make collecting resources satisfying by having the items drop.
     MAKE IT SO THE LOGS GO TO THE IMAGE LOCATION NOT A HARDCODED LOCATION
     MAKE IT SO THAT THE LOGS APPEAR ABOVE THE UI
     MAKE IT SO FIRST LOG PICKUP WORKS
+
+Make player sprite and animate
